@@ -1,0 +1,52 @@
+.boddy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.maze {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #98FB98;
+    /* Green color for free cells */
+}
+
+.cell.blocked {
+    background-color: #FF6347;
+    /* Red color for blocked cells */
+}
+
+.cell.entry-exit {
+    background-color: #1E90FF;
+    /* Blue color for entry and exit cells */
+}
+
+.cell.path {
+    background-color: black;
+    /* Black color for path cells */
+}
+
+.cell.lastpath {
+    background-color: rgb(5, 42, 144);
+    /* Black color for path cells */
+}
+.cell.backtrack {
+    background-color: #023602;
+    /* Reverted to green for backtracked cells */
+}
